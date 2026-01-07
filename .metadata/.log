@@ -682,3 +682,640 @@ java.lang.InterruptedException
 
 !ENTRY org.eclipse.lsp4e 4 0 2026-01-06 10:03:17.544
 !MESSAGE 10:03:17.532 [pool-2-thread-8] INFO  o.s.i.v.b.j.u.CompilationUnitCache - CU Cache: work item submitted for doc file:///Users/ruma/Sites/Corsi/Quality%20Code/Design%20Patterns/design-pattern-course/simple_factory/src/com/coffeepoweredcrew/simplefactory/Client.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-01-06 10:11:49.942
+!MESSAGE [Info] Document is null for editor: PostFactory.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-01-06 10:11:49.943
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/ruma/Sites/Corsi/Quality%20Code/Design%20Patterns/design-pattern-course/simple_factory/src/com/coffeepoweredcrew/simplefactory/PostFactory.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-01-06 10:11:49.956
+!MESSAGE [Info] Document is null for editor: Post.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-01-06 10:11:49.956
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/ruma/Sites/Corsi/Quality%20Code/Design%20Patterns/design-pattern-course/simple_factory/src/com/coffeepoweredcrew/simplefactory/Post.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-01-06 10:11:49.973
+!MESSAGE [Info] Document is null for editor: Client.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-01-06 10:11:49.973
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/ruma/Sites/Corsi/Quality%20Code/Design%20Patterns/design-pattern-course/simple_factory/src/com/coffeepoweredcrew/simplefactory/Client.java
+
+!ENTRY com.microsoft.copilot.eclipse.ui 4 0 2026-01-06 10:11:50.748
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in com.microsoft.copilot.eclipse.ui.CopilotUi.stop() of bundle com.microsoft.copilot.eclipse.ui.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:928)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1096)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:399)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:699)
+	at org.eclipse.osgi.container.Module.stop(Module.java:557)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2153)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:2022)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:225)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:699)
+	at org.eclipse.osgi.container.Module.stop(Module.java:557)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:244)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4950)
+	at org.eclipse.swt.SWT.error(SWT.java:4865)
+	at org.eclipse.swt.SWT.error(SWT.java:4836)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1211)
+	at org.eclipse.swt.widgets.Display.createDisplay(Display.java:962)
+	at org.eclipse.swt.widgets.Display.create(Display.java:946)
+	at org.eclipse.swt.graphics.Device.<init>(Device.java:132)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:800)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:791)
+	at org.eclipse.swt.widgets.Display.getDefault(Display.java:1545)
+	at com.microsoft.copilot.eclipse.ui.utils.SwtUtils.invokeOnDisplayThread(SwtUtils.java:62)
+	at com.microsoft.copilot.eclipse.ui.chat.services.ChatBaseService.ensureRealm(ChatBaseService.java:106)
+	at com.microsoft.copilot.eclipse.ui.chat.services.ModelService.disposeAllSideEffects(ModelService.java:710)
+	at com.microsoft.copilot.eclipse.ui.chat.services.ModelService.dispose(ModelService.java:736)
+	at com.microsoft.copilot.eclipse.ui.chat.services.ChatServiceManager.dispose(ChatServiceManager.java:161)
+	at com.microsoft.copilot.eclipse.ui.CopilotUi.stop(CopilotUi.java:213)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:908)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:900)
+	... 13 more
+Root exception:
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4950)
+	at org.eclipse.swt.SWT.error(SWT.java:4865)
+	at org.eclipse.swt.SWT.error(SWT.java:4836)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1211)
+	at org.eclipse.swt.widgets.Display.createDisplay(Display.java:962)
+	at org.eclipse.swt.widgets.Display.create(Display.java:946)
+	at org.eclipse.swt.graphics.Device.<init>(Device.java:132)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:800)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:791)
+	at org.eclipse.swt.widgets.Display.getDefault(Display.java:1545)
+	at com.microsoft.copilot.eclipse.ui.utils.SwtUtils.invokeOnDisplayThread(SwtUtils.java:62)
+	at com.microsoft.copilot.eclipse.ui.chat.services.ChatBaseService.ensureRealm(ChatBaseService.java:106)
+	at com.microsoft.copilot.eclipse.ui.chat.services.ModelService.disposeAllSideEffects(ModelService.java:710)
+	at com.microsoft.copilot.eclipse.ui.chat.services.ModelService.dispose(ModelService.java:736)
+	at com.microsoft.copilot.eclipse.ui.chat.services.ChatServiceManager.dispose(ChatServiceManager.java:161)
+	at com.microsoft.copilot.eclipse.ui.CopilotUi.stop(CopilotUi.java:213)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:908)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:900)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1096)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:399)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:699)
+	at org.eclipse.osgi.container.Module.stop(Module.java:557)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2153)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:2022)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:225)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:699)
+	at org.eclipse.osgi.container.Module.stop(Module.java:557)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:244)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+!SESSION 2026-01-07 15:12:09.816 -----------------------------------------------
+eclipse.buildId=4.38.0.20251204-0849
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/ruma/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -product org.eclipse.epp.package.jee.product -keyring /Users/ruma/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2026-01-07 15:12:14.466
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-01-07 15:12:15.601
+!MESSAGE Logback config file: /Users/ruma/Sites/Corsi/Quality Code/Design Patterns/design-pattern-course/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.101.20251017-1242.xml
+
+!ENTRY org.eclipse.ui 2 0 2026-01-07 15:12:15.884
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2026-01-07 15:12:15.884
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2026-01-07 15:12:16.148
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2026-01-07 15:12:16.148
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-01-07 15:12:21.878
+!MESSAGE [Info] Starting language server with binary lsp agent.
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-01-07 15:12:21.882
+!MESSAGE [Info] Found native binary in fragment bundle: com.microsoft.copilot.eclipse.core.agent.macosx.aarch64
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-01-07 15:12:23.629
+!MESSAGE [Info] Lsp agent started successfully.
+
+!ENTRY org.eclipse.buildship.core 2 3 2026-01-07 15:12:24.340
+!MESSAGE Synchronize project simple_factory failed due to an error connecting to the Gradle build.
+!STACK 0
+org.gradle.tooling.GradleConnectionException: Could not run build action using connection to Gradle distribution 'https://services.gradle.org/distributions/gradle-4.1-bin.zip'.
+	at org.gradle.tooling.internal.consumer.ConnectionExceptionTransformer.transform(ConnectionExceptionTransformer.java:57)
+	at org.gradle.tooling.internal.consumer.ResultHandlerAdapter.onFailure(ResultHandlerAdapter.java:42)
+	at org.gradle.tooling.internal.consumer.async.DefaultAsyncConsumerActionExecutor$1$1.run(DefaultAsyncConsumerActionExecutor.java:68)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+	at org.gradle.tooling.internal.consumer.BlockingResultHandler.getResult(BlockingResultHandler.java:46)
+	at org.gradle.tooling.internal.consumer.DefaultBuildActionExecuter.run(DefaultBuildActionExecuter.java:72)
+	at org.eclipse.buildship.core.internal.util.gradle.CompatProjectConnection$CompatBuildActionExecuter.run(CompatProjectConnection.java:424)
+	at org.eclipse.buildship.core.internal.CachingBuildActionExecuter.run(CachingBuildActionExecuter.java:199)
+	at org.eclipse.buildship.core.internal.workspace.EclipseModelUtils.queryCompositeModel(EclipseModelUtils.java:122)
+	at org.eclipse.buildship.core.internal.workspace.EclipseModelUtils.runTasksAndQueryModels(EclipseModelUtils.java:64)
+	at org.eclipse.buildship.core.internal.workspace.DefaultModelProvider.lambda$fetchEclipseProjectAndRunSyncTasks$4(DefaultModelProvider.java:75)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild$GradleConnectionOperation.runInToolingApi(DefaultGradleBuild.java:337)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager$WorkspaceRunnableAdapter.run(DefaultToolingApiOperationManager.java:58)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2505)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2533)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager.run(DefaultToolingApiOperationManager.java:39)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild.withConnection(DefaultGradleBuild.java:127)
+	at org.eclipse.buildship.core.internal.workspace.DefaultModelProvider.lambda$fetchEclipseProjectAndRunSyncTasks$5(DefaultModelProvider.java:75)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:4859)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3556)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2307)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2180)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2071)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3985)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4854)
+	at org.eclipse.buildship.core.internal.workspace.DefaultModelProvider.getFromCache(DefaultModelProvider.java:98)
+	at org.eclipse.buildship.core.internal.workspace.DefaultModelProvider.executeOperation(DefaultModelProvider.java:90)
+	at org.eclipse.buildship.core.internal.workspace.DefaultModelProvider.fetchEclipseProjectAndRunSyncTasks(DefaultModelProvider.java:72)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild$SynchronizeOperation.runInToolingApi(DefaultGradleBuild.java:234)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager$WorkspaceRunnableAdapter.run(DefaultToolingApiOperationManager.java:58)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2505)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2533)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager.run(DefaultToolingApiOperationManager.java:39)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild$SynchronizeOperation.run(DefaultGradleBuild.java:197)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild.synchronize(DefaultGradleBuild.java:105)
+	at org.eclipse.buildship.core.internal.workspace.SynchronizationJob.runInToolingApi(SynchronizationJob.java:64)
+	at org.eclipse.buildship.core.internal.workspace.SynchronizationJob.runInToolingApi(SynchronizationJob.java:30)
+	at org.eclipse.buildship.core.internal.operation.ToolingApiJob$1.runInToolingApi(ToolingApiJob.java:54)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager$WorkspaceRunnableAdapter.run(DefaultToolingApiOperationManager.java:58)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2505)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2533)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager.run(DefaultToolingApiOperationManager.java:39)
+	at org.eclipse.buildship.core.internal.operation.ToolingApiJob.run(ToolingApiJob.java:65)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.gradle.api.GradleException: Unable to start the daemon process.
+This problem might be caused by incorrect configuration of the daemon.
+For example, an unrecognized jvm option is used.
+Please refer to the user guide chapter on the daemon at https://docs.gradle.org/4.1/userguide/gradle_daemon.html
+Please read the following process output to find out more:
+-----------------------
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Could not create service of type DaemonContext using DaemonServices.createDaemonContext().
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+* Get more help at https://help.gradle.org
+
+	at org.gradle.launcher.daemon.bootstrap.DaemonGreeter.parseDaemonOutput(DaemonGreeter.java:34)
+	at org.gradle.launcher.daemon.client.DefaultDaemonStarter.startProcess(DefaultDaemonStarter.java:151)
+	at org.gradle.launcher.daemon.client.DefaultDaemonStarter.startDaemon(DefaultDaemonStarter.java:134)
+	at org.gradle.launcher.daemon.client.DefaultDaemonConnector.startDaemon(DefaultDaemonConnector.java:205)
+	at org.gradle.launcher.daemon.client.DefaultDaemonConnector.connect(DefaultDaemonConnector.java:127)
+	at org.gradle.launcher.daemon.client.DaemonClient.execute(DaemonClient.java:138)
+	at org.gradle.launcher.daemon.client.DaemonClient.execute(DaemonClient.java:92)
+	at org.gradle.tooling.internal.provider.DaemonBuildActionExecuter.execute(DaemonBuildActionExecuter.java:60)
+	at org.gradle.tooling.internal.provider.DaemonBuildActionExecuter.execute(DaemonBuildActionExecuter.java:41)
+	at org.gradle.tooling.internal.provider.LoggingBridgingBuildActionExecuter.execute(LoggingBridgingBuildActionExecuter.java:60)
+	at org.gradle.tooling.internal.provider.LoggingBridgingBuildActionExecuter.execute(LoggingBridgingBuildActionExecuter.java:34)
+	at org.gradle.tooling.internal.provider.ProviderConnection.run(ProviderConnection.java:143)
+	at org.gradle.tooling.internal.provider.ProviderConnection.run(ProviderConnection.java:128)
+	at org.gradle.tooling.internal.provider.DefaultConnection.run(DefaultConnection.java:208)
+	at org.gradle.tooling.internal.consumer.connection.CancellableActionRunner.execute(CancellableActionRunner.java:63)
+	at org.gradle.tooling.internal.consumer.connection.CancellableActionRunner.run(CancellableActionRunner.java:51)
+	at org.gradle.tooling.internal.consumer.connection.AbstractConsumerConnection.run(AbstractConsumerConnection.java:69)
+	at org.gradle.tooling.internal.consumer.connection.ParameterValidatingConsumerConnection.run(ParameterValidatingConsumerConnection.java:56)
+	at org.gradle.tooling.internal.consumer.DefaultBuildActionExecuter$1.run(DefaultBuildActionExecuter.java:86)
+	at org.gradle.tooling.internal.consumer.connection.LazyConsumerActionExecutor.run(LazyConsumerActionExecutor.java:143)
+	at org.gradle.tooling.internal.consumer.connection.CancellableConsumerActionExecutor.run(CancellableConsumerActionExecutor.java:45)
+	at org.gradle.tooling.internal.consumer.connection.ProgressLoggingConsumerActionExecutor.run(ProgressLoggingConsumerActionExecutor.java:61)
+	at org.gradle.tooling.internal.consumer.connection.RethrowingErrorsConsumerActionExecutor.run(RethrowingErrorsConsumerActionExecutor.java:38)
+	at org.gradle.tooling.internal.consumer.async.DefaultAsyncConsumerActionExecutor$1$1.run(DefaultAsyncConsumerActionExecutor.java:66)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.buildship.core 2 3 2026-01-07 15:12:24.342
+!MESSAGE Synchronize Gradle projects with workspace failed due to an error connecting to the Gradle build.
+!STACK 0
+org.gradle.tooling.GradleConnectionException: Could not run build action using connection to Gradle distribution 'https://services.gradle.org/distributions/gradle-4.1-bin.zip'.
+	at org.gradle.tooling.internal.consumer.ConnectionExceptionTransformer.transform(ConnectionExceptionTransformer.java:57)
+	at org.gradle.tooling.internal.consumer.ResultHandlerAdapter.onFailure(ResultHandlerAdapter.java:42)
+	at org.gradle.tooling.internal.consumer.async.DefaultAsyncConsumerActionExecutor$1$1.run(DefaultAsyncConsumerActionExecutor.java:68)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+	at org.gradle.tooling.internal.consumer.BlockingResultHandler.getResult(BlockingResultHandler.java:46)
+	at org.gradle.tooling.internal.consumer.DefaultBuildActionExecuter.run(DefaultBuildActionExecuter.java:72)
+	at org.eclipse.buildship.core.internal.util.gradle.CompatProjectConnection$CompatBuildActionExecuter.run(CompatProjectConnection.java:424)
+	at org.eclipse.buildship.core.internal.CachingBuildActionExecuter.run(CachingBuildActionExecuter.java:199)
+	at org.eclipse.buildship.core.internal.workspace.EclipseModelUtils.queryCompositeModel(EclipseModelUtils.java:122)
+	at org.eclipse.buildship.core.internal.workspace.EclipseModelUtils.runTasksAndQueryModels(EclipseModelUtils.java:64)
+	at org.eclipse.buildship.core.internal.workspace.DefaultModelProvider.lambda$fetchEclipseProjectAndRunSyncTasks$4(DefaultModelProvider.java:75)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild$GradleConnectionOperation.runInToolingApi(DefaultGradleBuild.java:337)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager$WorkspaceRunnableAdapter.run(DefaultToolingApiOperationManager.java:58)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2505)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2533)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager.run(DefaultToolingApiOperationManager.java:39)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild.withConnection(DefaultGradleBuild.java:127)
+	at org.eclipse.buildship.core.internal.workspace.DefaultModelProvider.lambda$fetchEclipseProjectAndRunSyncTasks$5(DefaultModelProvider.java:75)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:4859)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3556)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2307)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2180)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2071)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3985)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4854)
+	at org.eclipse.buildship.core.internal.workspace.DefaultModelProvider.getFromCache(DefaultModelProvider.java:98)
+	at org.eclipse.buildship.core.internal.workspace.DefaultModelProvider.executeOperation(DefaultModelProvider.java:90)
+	at org.eclipse.buildship.core.internal.workspace.DefaultModelProvider.fetchEclipseProjectAndRunSyncTasks(DefaultModelProvider.java:72)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild$SynchronizeOperation.runInToolingApi(DefaultGradleBuild.java:234)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager$WorkspaceRunnableAdapter.run(DefaultToolingApiOperationManager.java:58)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2505)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2533)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager.run(DefaultToolingApiOperationManager.java:39)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild$SynchronizeOperation.run(DefaultGradleBuild.java:197)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild.synchronize(DefaultGradleBuild.java:105)
+	at org.eclipse.buildship.core.internal.workspace.SynchronizationJob.runInToolingApi(SynchronizationJob.java:64)
+	at org.eclipse.buildship.core.internal.workspace.SynchronizationJob.runInToolingApi(SynchronizationJob.java:30)
+	at org.eclipse.buildship.core.internal.operation.ToolingApiJob$1.runInToolingApi(ToolingApiJob.java:54)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager$WorkspaceRunnableAdapter.run(DefaultToolingApiOperationManager.java:58)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2505)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2533)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager.run(DefaultToolingApiOperationManager.java:39)
+	at org.eclipse.buildship.core.internal.operation.ToolingApiJob.run(ToolingApiJob.java:65)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.gradle.api.GradleException: Unable to start the daemon process.
+This problem might be caused by incorrect configuration of the daemon.
+For example, an unrecognized jvm option is used.
+Please refer to the user guide chapter on the daemon at https://docs.gradle.org/4.1/userguide/gradle_daemon.html
+Please read the following process output to find out more:
+-----------------------
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Could not create service of type DaemonContext using DaemonServices.createDaemonContext().
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+* Get more help at https://help.gradle.org
+
+	at org.gradle.launcher.daemon.bootstrap.DaemonGreeter.parseDaemonOutput(DaemonGreeter.java:34)
+	at org.gradle.launcher.daemon.client.DefaultDaemonStarter.startProcess(DefaultDaemonStarter.java:151)
+	at org.gradle.launcher.daemon.client.DefaultDaemonStarter.startDaemon(DefaultDaemonStarter.java:134)
+	at org.gradle.launcher.daemon.client.DefaultDaemonConnector.startDaemon(DefaultDaemonConnector.java:205)
+	at org.gradle.launcher.daemon.client.DefaultDaemonConnector.connect(DefaultDaemonConnector.java:127)
+	at org.gradle.launcher.daemon.client.DaemonClient.execute(DaemonClient.java:138)
+	at org.gradle.launcher.daemon.client.DaemonClient.execute(DaemonClient.java:92)
+	at org.gradle.tooling.internal.provider.DaemonBuildActionExecuter.execute(DaemonBuildActionExecuter.java:60)
+	at org.gradle.tooling.internal.provider.DaemonBuildActionExecuter.execute(DaemonBuildActionExecuter.java:41)
+	at org.gradle.tooling.internal.provider.LoggingBridgingBuildActionExecuter.execute(LoggingBridgingBuildActionExecuter.java:60)
+	at org.gradle.tooling.internal.provider.LoggingBridgingBuildActionExecuter.execute(LoggingBridgingBuildActionExecuter.java:34)
+	at org.gradle.tooling.internal.provider.ProviderConnection.run(ProviderConnection.java:143)
+	at org.gradle.tooling.internal.provider.ProviderConnection.run(ProviderConnection.java:128)
+	at org.gradle.tooling.internal.provider.DefaultConnection.run(DefaultConnection.java:208)
+	at org.gradle.tooling.internal.consumer.connection.CancellableActionRunner.execute(CancellableActionRunner.java:63)
+	at org.gradle.tooling.internal.consumer.connection.CancellableActionRunner.run(CancellableActionRunner.java:51)
+	at org.gradle.tooling.internal.consumer.connection.AbstractConsumerConnection.run(AbstractConsumerConnection.java:69)
+	at org.gradle.tooling.internal.consumer.connection.ParameterValidatingConsumerConnection.run(ParameterValidatingConsumerConnection.java:56)
+	at org.gradle.tooling.internal.consumer.DefaultBuildActionExecuter$1.run(DefaultBuildActionExecuter.java:86)
+	at org.gradle.tooling.internal.consumer.connection.LazyConsumerActionExecutor.run(LazyConsumerActionExecutor.java:143)
+	at org.gradle.tooling.internal.consumer.connection.CancellableConsumerActionExecutor.run(CancellableConsumerActionExecutor.java:45)
+	at org.gradle.tooling.internal.consumer.connection.ProgressLoggingConsumerActionExecutor.run(ProgressLoggingConsumerActionExecutor.java:61)
+	at org.gradle.tooling.internal.consumer.connection.RethrowingErrorsConsumerActionExecutor.run(RethrowingErrorsConsumerActionExecutor.java:38)
+	at org.gradle.tooling.internal.consumer.async.DefaultAsyncConsumerActionExecutor$1$1.run(DefaultAsyncConsumerActionExecutor.java:66)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.buildship.core 2 3 2026-01-07 15:12:24.675
+!MESSAGE Synchronize project builder failed due to an error connecting to the Gradle build.
+!STACK 0
+org.gradle.tooling.GradleConnectionException: Could not run build action using connection to Gradle distribution 'https://services.gradle.org/distributions/gradle-4.1-bin.zip'.
+	at org.gradle.tooling.internal.consumer.ConnectionExceptionTransformer.transform(ConnectionExceptionTransformer.java:57)
+	at org.gradle.tooling.internal.consumer.ResultHandlerAdapter.onFailure(ResultHandlerAdapter.java:42)
+	at org.gradle.tooling.internal.consumer.async.DefaultAsyncConsumerActionExecutor$1$1.run(DefaultAsyncConsumerActionExecutor.java:68)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+	at org.gradle.tooling.internal.consumer.BlockingResultHandler.getResult(BlockingResultHandler.java:46)
+	at org.gradle.tooling.internal.consumer.DefaultBuildActionExecuter.run(DefaultBuildActionExecuter.java:72)
+	at org.eclipse.buildship.core.internal.util.gradle.CompatProjectConnection$CompatBuildActionExecuter.run(CompatProjectConnection.java:424)
+	at org.eclipse.buildship.core.internal.CachingBuildActionExecuter.run(CachingBuildActionExecuter.java:199)
+	at org.eclipse.buildship.core.internal.workspace.EclipseModelUtils.queryCompositeModel(EclipseModelUtils.java:122)
+	at org.eclipse.buildship.core.internal.workspace.EclipseModelUtils.runTasksAndQueryModels(EclipseModelUtils.java:64)
+	at org.eclipse.buildship.core.internal.workspace.DefaultModelProvider.lambda$fetchEclipseProjectAndRunSyncTasks$4(DefaultModelProvider.java:75)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild$GradleConnectionOperation.runInToolingApi(DefaultGradleBuild.java:337)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager$WorkspaceRunnableAdapter.run(DefaultToolingApiOperationManager.java:58)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2505)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2533)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager.run(DefaultToolingApiOperationManager.java:39)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild.withConnection(DefaultGradleBuild.java:127)
+	at org.eclipse.buildship.core.internal.workspace.DefaultModelProvider.lambda$fetchEclipseProjectAndRunSyncTasks$5(DefaultModelProvider.java:75)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:4859)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3556)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2307)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2180)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2071)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3985)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4854)
+	at org.eclipse.buildship.core.internal.workspace.DefaultModelProvider.getFromCache(DefaultModelProvider.java:98)
+	at org.eclipse.buildship.core.internal.workspace.DefaultModelProvider.executeOperation(DefaultModelProvider.java:90)
+	at org.eclipse.buildship.core.internal.workspace.DefaultModelProvider.fetchEclipseProjectAndRunSyncTasks(DefaultModelProvider.java:72)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild$SynchronizeOperation.runInToolingApi(DefaultGradleBuild.java:234)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager$WorkspaceRunnableAdapter.run(DefaultToolingApiOperationManager.java:58)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2505)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2533)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager.run(DefaultToolingApiOperationManager.java:39)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild$SynchronizeOperation.run(DefaultGradleBuild.java:197)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild.synchronize(DefaultGradleBuild.java:105)
+	at org.eclipse.buildship.core.internal.workspace.SynchronizationJob.runInToolingApi(SynchronizationJob.java:64)
+	at org.eclipse.buildship.core.internal.workspace.SynchronizationJob.runInToolingApi(SynchronizationJob.java:30)
+	at org.eclipse.buildship.core.internal.operation.ToolingApiJob$1.runInToolingApi(ToolingApiJob.java:54)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager$WorkspaceRunnableAdapter.run(DefaultToolingApiOperationManager.java:58)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2505)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2533)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager.run(DefaultToolingApiOperationManager.java:39)
+	at org.eclipse.buildship.core.internal.operation.ToolingApiJob.run(ToolingApiJob.java:65)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.gradle.api.GradleException: Unable to start the daemon process.
+This problem might be caused by incorrect configuration of the daemon.
+For example, an unrecognized jvm option is used.
+Please refer to the user guide chapter on the daemon at https://docs.gradle.org/4.1/userguide/gradle_daemon.html
+Please read the following process output to find out more:
+-----------------------
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Could not create service of type DaemonContext using DaemonServices.createDaemonContext().
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+* Get more help at https://help.gradle.org
+
+	at org.gradle.launcher.daemon.bootstrap.DaemonGreeter.parseDaemonOutput(DaemonGreeter.java:34)
+	at org.gradle.launcher.daemon.client.DefaultDaemonStarter.startProcess(DefaultDaemonStarter.java:151)
+	at org.gradle.launcher.daemon.client.DefaultDaemonStarter.startDaemon(DefaultDaemonStarter.java:134)
+	at org.gradle.launcher.daemon.client.DefaultDaemonConnector.startDaemon(DefaultDaemonConnector.java:205)
+	at org.gradle.launcher.daemon.client.DefaultDaemonConnector.connect(DefaultDaemonConnector.java:127)
+	at org.gradle.launcher.daemon.client.DaemonClient.execute(DaemonClient.java:138)
+	at org.gradle.launcher.daemon.client.DaemonClient.execute(DaemonClient.java:92)
+	at org.gradle.tooling.internal.provider.DaemonBuildActionExecuter.execute(DaemonBuildActionExecuter.java:60)
+	at org.gradle.tooling.internal.provider.DaemonBuildActionExecuter.execute(DaemonBuildActionExecuter.java:41)
+	at org.gradle.tooling.internal.provider.LoggingBridgingBuildActionExecuter.execute(LoggingBridgingBuildActionExecuter.java:60)
+	at org.gradle.tooling.internal.provider.LoggingBridgingBuildActionExecuter.execute(LoggingBridgingBuildActionExecuter.java:34)
+	at org.gradle.tooling.internal.provider.ProviderConnection.run(ProviderConnection.java:143)
+	at org.gradle.tooling.internal.provider.ProviderConnection.run(ProviderConnection.java:128)
+	at org.gradle.tooling.internal.provider.DefaultConnection.run(DefaultConnection.java:208)
+	at org.gradle.tooling.internal.consumer.connection.CancellableActionRunner.execute(CancellableActionRunner.java:63)
+	at org.gradle.tooling.internal.consumer.connection.CancellableActionRunner.run(CancellableActionRunner.java:51)
+	at org.gradle.tooling.internal.consumer.connection.AbstractConsumerConnection.run(AbstractConsumerConnection.java:69)
+	at org.gradle.tooling.internal.consumer.connection.ParameterValidatingConsumerConnection.run(ParameterValidatingConsumerConnection.java:56)
+	at org.gradle.tooling.internal.consumer.DefaultBuildActionExecuter$1.run(DefaultBuildActionExecuter.java:86)
+	at org.gradle.tooling.internal.consumer.connection.LazyConsumerActionExecutor.run(LazyConsumerActionExecutor.java:143)
+	at org.gradle.tooling.internal.consumer.connection.CancellableConsumerActionExecutor.run(CancellableConsumerActionExecutor.java:45)
+	at org.gradle.tooling.internal.consumer.connection.ProgressLoggingConsumerActionExecutor.run(ProgressLoggingConsumerActionExecutor.java:61)
+	at org.gradle.tooling.internal.consumer.connection.RethrowingErrorsConsumerActionExecutor.run(RethrowingErrorsConsumerActionExecutor.java:38)
+	at org.gradle.tooling.internal.consumer.async.DefaultAsyncConsumerActionExecutor$1$1.run(DefaultAsyncConsumerActionExecutor.java:66)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.buildship.core 2 3 2026-01-07 15:12:24.677
+!MESSAGE Synchronize Gradle projects with workspace failed due to an error connecting to the Gradle build.
+!STACK 0
+org.gradle.tooling.GradleConnectionException: Could not run build action using connection to Gradle distribution 'https://services.gradle.org/distributions/gradle-4.1-bin.zip'.
+	at org.gradle.tooling.internal.consumer.ConnectionExceptionTransformer.transform(ConnectionExceptionTransformer.java:57)
+	at org.gradle.tooling.internal.consumer.ResultHandlerAdapter.onFailure(ResultHandlerAdapter.java:42)
+	at org.gradle.tooling.internal.consumer.async.DefaultAsyncConsumerActionExecutor$1$1.run(DefaultAsyncConsumerActionExecutor.java:68)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+	at org.gradle.tooling.internal.consumer.BlockingResultHandler.getResult(BlockingResultHandler.java:46)
+	at org.gradle.tooling.internal.consumer.DefaultBuildActionExecuter.run(DefaultBuildActionExecuter.java:72)
+	at org.eclipse.buildship.core.internal.util.gradle.CompatProjectConnection$CompatBuildActionExecuter.run(CompatProjectConnection.java:424)
+	at org.eclipse.buildship.core.internal.CachingBuildActionExecuter.run(CachingBuildActionExecuter.java:199)
+	at org.eclipse.buildship.core.internal.workspace.EclipseModelUtils.queryCompositeModel(EclipseModelUtils.java:122)
+	at org.eclipse.buildship.core.internal.workspace.EclipseModelUtils.runTasksAndQueryModels(EclipseModelUtils.java:64)
+	at org.eclipse.buildship.core.internal.workspace.DefaultModelProvider.lambda$fetchEclipseProjectAndRunSyncTasks$4(DefaultModelProvider.java:75)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild$GradleConnectionOperation.runInToolingApi(DefaultGradleBuild.java:337)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager$WorkspaceRunnableAdapter.run(DefaultToolingApiOperationManager.java:58)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2505)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2533)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager.run(DefaultToolingApiOperationManager.java:39)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild.withConnection(DefaultGradleBuild.java:127)
+	at org.eclipse.buildship.core.internal.workspace.DefaultModelProvider.lambda$fetchEclipseProjectAndRunSyncTasks$5(DefaultModelProvider.java:75)
+	at com.google.common.cache.LocalCache$LocalManualCache$1.load(LocalCache.java:4859)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3556)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2307)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2180)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2071)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3985)
+	at com.google.common.cache.LocalCache$LocalManualCache.get(LocalCache.java:4854)
+	at org.eclipse.buildship.core.internal.workspace.DefaultModelProvider.getFromCache(DefaultModelProvider.java:98)
+	at org.eclipse.buildship.core.internal.workspace.DefaultModelProvider.executeOperation(DefaultModelProvider.java:90)
+	at org.eclipse.buildship.core.internal.workspace.DefaultModelProvider.fetchEclipseProjectAndRunSyncTasks(DefaultModelProvider.java:72)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild$SynchronizeOperation.runInToolingApi(DefaultGradleBuild.java:234)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager$WorkspaceRunnableAdapter.run(DefaultToolingApiOperationManager.java:58)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2505)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2533)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager.run(DefaultToolingApiOperationManager.java:39)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild$SynchronizeOperation.run(DefaultGradleBuild.java:197)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild.synchronize(DefaultGradleBuild.java:105)
+	at org.eclipse.buildship.core.internal.workspace.SynchronizationJob.runInToolingApi(SynchronizationJob.java:64)
+	at org.eclipse.buildship.core.internal.workspace.SynchronizationJob.runInToolingApi(SynchronizationJob.java:30)
+	at org.eclipse.buildship.core.internal.operation.ToolingApiJob$1.runInToolingApi(ToolingApiJob.java:54)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager$WorkspaceRunnableAdapter.run(DefaultToolingApiOperationManager.java:58)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2505)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2533)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager.run(DefaultToolingApiOperationManager.java:39)
+	at org.eclipse.buildship.core.internal.operation.ToolingApiJob.run(ToolingApiJob.java:65)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.gradle.api.GradleException: Unable to start the daemon process.
+This problem might be caused by incorrect configuration of the daemon.
+For example, an unrecognized jvm option is used.
+Please refer to the user guide chapter on the daemon at https://docs.gradle.org/4.1/userguide/gradle_daemon.html
+Please read the following process output to find out more:
+-----------------------
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Could not create service of type DaemonContext using DaemonServices.createDaemonContext().
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+* Get more help at https://help.gradle.org
+
+	at org.gradle.launcher.daemon.bootstrap.DaemonGreeter.parseDaemonOutput(DaemonGreeter.java:34)
+	at org.gradle.launcher.daemon.client.DefaultDaemonStarter.startProcess(DefaultDaemonStarter.java:151)
+	at org.gradle.launcher.daemon.client.DefaultDaemonStarter.startDaemon(DefaultDaemonStarter.java:134)
+	at org.gradle.launcher.daemon.client.DefaultDaemonConnector.startDaemon(DefaultDaemonConnector.java:205)
+	at org.gradle.launcher.daemon.client.DefaultDaemonConnector.connect(DefaultDaemonConnector.java:127)
+	at org.gradle.launcher.daemon.client.DaemonClient.execute(DaemonClient.java:138)
+	at org.gradle.launcher.daemon.client.DaemonClient.execute(DaemonClient.java:92)
+	at org.gradle.tooling.internal.provider.DaemonBuildActionExecuter.execute(DaemonBuildActionExecuter.java:60)
+	at org.gradle.tooling.internal.provider.DaemonBuildActionExecuter.execute(DaemonBuildActionExecuter.java:41)
+	at org.gradle.tooling.internal.provider.LoggingBridgingBuildActionExecuter.execute(LoggingBridgingBuildActionExecuter.java:60)
+	at org.gradle.tooling.internal.provider.LoggingBridgingBuildActionExecuter.execute(LoggingBridgingBuildActionExecuter.java:34)
+	at org.gradle.tooling.internal.provider.ProviderConnection.run(ProviderConnection.java:143)
+	at org.gradle.tooling.internal.provider.ProviderConnection.run(ProviderConnection.java:128)
+	at org.gradle.tooling.internal.provider.DefaultConnection.run(DefaultConnection.java:208)
+	at org.gradle.tooling.internal.consumer.connection.CancellableActionRunner.execute(CancellableActionRunner.java:63)
+	at org.gradle.tooling.internal.consumer.connection.CancellableActionRunner.run(CancellableActionRunner.java:51)
+	at org.gradle.tooling.internal.consumer.connection.AbstractConsumerConnection.run(AbstractConsumerConnection.java:69)
+	at org.gradle.tooling.internal.consumer.connection.ParameterValidatingConsumerConnection.run(ParameterValidatingConsumerConnection.java:56)
+	at org.gradle.tooling.internal.consumer.DefaultBuildActionExecuter$1.run(DefaultBuildActionExecuter.java:86)
+	at org.gradle.tooling.internal.consumer.connection.LazyConsumerActionExecutor.run(LazyConsumerActionExecutor.java:143)
+	at org.gradle.tooling.internal.consumer.connection.CancellableConsumerActionExecutor.run(CancellableConsumerActionExecutor.java:45)
+	at org.gradle.tooling.internal.consumer.connection.ProgressLoggingConsumerActionExecutor.run(ProgressLoggingConsumerActionExecutor.java:61)
+	at org.gradle.tooling.internal.consumer.connection.RethrowingErrorsConsumerActionExecutor.run(RethrowingErrorsConsumerActionExecutor.java:38)
+	at org.gradle.tooling.internal.consumer.async.DefaultAsyncConsumerActionExecutor$1$1.run(DefaultAsyncConsumerActionExecutor.java:66)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.AbstractManagedExecutor$1.run(AbstractManagedExecutor.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-07 15:12:26.389
+!MESSAGE [Info]	[lsp] GitHub Copilot Language Server 1.381.0 initialized
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-07 15:12:26.407
+!MESSAGE [Info]	[default] Policy watcher started for GitHub Copilot Plugin
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-07 15:12:26.688
+!MESSAGE [Info]	[certificates] Removed 3 expired certificates
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-01-07 15:12:27.718
+!MESSAGE [Info]	[CopilotMCP] MCP state changed from false to true
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-01-07 15:12:52.094
+!MESSAGE [Info] Document is null for editor: Client.java
+
+!ENTRY com.microsoft.copilot.eclipse 1 0 2026-01-07 15:12:52.095
+!MESSAGE [Info] Completion handler is refreshed for the document: file:///Users/ruma/Sites/Corsi/Quality%20Code/Design%20Patterns/design-pattern-course/simple_factory/src/com/coffeepoweredcrew/simplefactory/Client.java
+
+!ENTRY org.eclipse.jface 2 0 2026-01-07 15:12:52.111
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2026-01-07 15:12:52.111
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolInWorkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolInWorkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.microsoft.copilot.eclipse.ui 4 0 2026-01-07 15:12:52.967
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in com.microsoft.copilot.eclipse.ui.CopilotUi.stop() of bundle com.microsoft.copilot.eclipse.ui.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:928)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1096)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:399)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:699)
+	at org.eclipse.osgi.container.Module.stop(Module.java:557)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2153)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:2022)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:225)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:699)
+	at org.eclipse.osgi.container.Module.stop(Module.java:557)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:244)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4950)
+	at org.eclipse.swt.SWT.error(SWT.java:4865)
+	at org.eclipse.swt.SWT.error(SWT.java:4836)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1211)
+	at org.eclipse.swt.widgets.Display.createDisplay(Display.java:962)
+	at org.eclipse.swt.widgets.Display.create(Display.java:946)
+	at org.eclipse.swt.graphics.Device.<init>(Device.java:132)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:800)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:791)
+	at org.eclipse.swt.widgets.Display.getDefault(Display.java:1545)
+	at com.microsoft.copilot.eclipse.ui.utils.SwtUtils.invokeOnDisplayThread(SwtUtils.java:62)
+	at com.microsoft.copilot.eclipse.ui.chat.services.ChatBaseService.ensureRealm(ChatBaseService.java:106)
+	at com.microsoft.copilot.eclipse.ui.chat.services.ModelService.disposeAllSideEffects(ModelService.java:710)
+	at com.microsoft.copilot.eclipse.ui.chat.services.ModelService.dispose(ModelService.java:736)
+	at com.microsoft.copilot.eclipse.ui.chat.services.ChatServiceManager.dispose(ChatServiceManager.java:161)
+	at com.microsoft.copilot.eclipse.ui.CopilotUi.stop(CopilotUi.java:213)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:908)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:900)
+	... 13 more
+Root exception:
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4950)
+	at org.eclipse.swt.SWT.error(SWT.java:4865)
+	at org.eclipse.swt.SWT.error(SWT.java:4836)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1211)
+	at org.eclipse.swt.widgets.Display.createDisplay(Display.java:962)
+	at org.eclipse.swt.widgets.Display.create(Display.java:946)
+	at org.eclipse.swt.graphics.Device.<init>(Device.java:132)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:800)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:791)
+	at org.eclipse.swt.widgets.Display.getDefault(Display.java:1545)
+	at com.microsoft.copilot.eclipse.ui.utils.SwtUtils.invokeOnDisplayThread(SwtUtils.java:62)
+	at com.microsoft.copilot.eclipse.ui.chat.services.ChatBaseService.ensureRealm(ChatBaseService.java:106)
+	at com.microsoft.copilot.eclipse.ui.chat.services.ModelService.disposeAllSideEffects(ModelService.java:710)
+	at com.microsoft.copilot.eclipse.ui.chat.services.ModelService.dispose(ModelService.java:736)
+	at com.microsoft.copilot.eclipse.ui.chat.services.ChatServiceManager.dispose(ChatServiceManager.java:161)
+	at com.microsoft.copilot.eclipse.ui.CopilotUi.stop(CopilotUi.java:213)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:908)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:900)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1096)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:399)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:699)
+	at org.eclipse.osgi.container.Module.stop(Module.java:557)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2153)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:2022)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:225)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:699)
+	at org.eclipse.osgi.container.Module.stop(Module.java:557)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:244)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
