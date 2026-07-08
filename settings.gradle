@@ -8,3 +8,7 @@ include 'design-pattern:simple_factory'
 
 // Sotto-progetti solid-principles
 include 'solid-principles:single_responsibility_principle'
+include 'solid-principles:open_closed_principle'
+include 'solid-principles:liskov_substitution_principle'
+include 'solid-principles:interface_segregation_principle'
+include 'solid-principles:dependency_inversion_principle'

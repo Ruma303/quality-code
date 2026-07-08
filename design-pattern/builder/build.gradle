@@ -1,8 +1,13 @@
 apply plugin: 'eclipse'
 
 apply plugin: 'java'
+apply plugin: 'application'
 
 java {
     sourceCompatibility = JavaVersion.current()
     targetCompatibility = JavaVersion.current()
+}
+
+application {
+    mainClass = 'com.cpc.dp.builder.Client'
 }
