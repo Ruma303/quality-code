@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+
+// Spostati qui sotto e impostati alla versione della tua macchina (es. 21 o 17)
+sourceCompatibility = JavaVersion.current()
+targetCompatibility = JavaVersion.current()
+
+repositories {
+    mavenCentral() 
+}
+
+dependencies {
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.17.2'
+}
+
+// IL BLOCCO JAVA TOOLCHAIN È STATO COMPLETAMENTE RIMOSSO DA QUI

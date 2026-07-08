@@ -1,0 +1,8 @@
+apply plugin: 'eclipse'
+
+apply plugin: 'java'
+
+java {
+    sourceCompatibility = JavaVersion.current()
+    targetCompatibility = JavaVersion.current()
+}

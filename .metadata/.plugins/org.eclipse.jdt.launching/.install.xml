@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<dirs>
-    <entry loc="/Users/ruma/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.aarch64_21.0.8.v20250724-1412/jre" stamp="1757017500174"/>
-    <entry loc="/Users/ruma/Library/Java/JavaVirtualMachines/openjdk-25.0.1/Contents/Home" stamp="1762628036389"/>
-    <entry loc="/Users/ruma/.sdkman/candidates/java/25-graal" stamp="1763405900000"/>
-    <entry loc="/Users/ruma/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.aarch64_21.0.8.v20250724-1412" stamp="1757017500174"/>
-    <entry loc="/Users/ruma/Library/Java/JavaVirtualMachines/graalvm-jdk-25/Contents/Home" stamp="1762535536654"/>
-    <entry loc="/Users/ruma/Library/Java/JavaVirtualMachines/graalvm-ce-21.0.2/Contents/Home" stamp="1767082816466"/>
-</dirs>

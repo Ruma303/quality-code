@@ -1,0 +1,10 @@
+rootProject.name = 'quality-code'
+
+// Sotto-progetti design-pattern
+include 'design-pattern:builder'
+include 'design-pattern:factory_method'
+include 'design-pattern:prototype'
+include 'design-pattern:simple_factory'
+
+// Sotto-progetti solid-principles
+include 'solid-principles:single_responsibility_principle'

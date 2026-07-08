@@ -321,3 +321,27 @@ restore_points/
 !docker-compose.yml
 !Dockerfile
 !Vagrantfile
+
+#############################################
+# Escludere per configurazioni personali    #
+#############################################
+
+# Cache di Gradle e cartelle di build
+.gradle/
+**/build/
+**/bin/
+
+# File specifici di Eclipse (incluso il workspace)
+.metadata/
+.settings/
+.classpath
+.project
+
+# File specifici di IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+
+# File specifici di VS Code o sistemi operativi
+.vscode/
+.DS_Store
